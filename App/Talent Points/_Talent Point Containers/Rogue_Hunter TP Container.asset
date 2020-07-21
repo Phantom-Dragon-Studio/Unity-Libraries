@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c8c7030c7775744aa2cbd70ca19d06c, type: 3}
+  m_Name: Rogue_Hunter TP Container
+  m_EditorClassIdentifier: 
+  talentPoints:
+  - {fileID: 11400000, guid: f999391ae10c8eb44bbab151ee3f8e0c, type: 2}
+  - {fileID: 11400000, guid: 6dde88ea14716504abfff094abe20434, type: 2}
+  - {fileID: 11400000, guid: bb4695aff10be4b478f089db84a6e028, type: 2}
+  - {fileID: 11400000, guid: 2735ce79c42c00f48b07cbee99ab4394, type: 2}
+  - {fileID: 11400000, guid: dbfc9bd253c08a74b91d4317ab742820, type: 2}
+  totalPointsAvailable: 983
+  totalPointsSpent: 56
