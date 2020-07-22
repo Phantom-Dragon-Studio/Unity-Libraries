@@ -1,6 +1,4 @@
-﻿﻿﻿using UnityEngine;
-
-  namespace PhantomDragonStudio.UnitSystem.Data
+﻿﻿﻿ namespace App
 {
     public enum GameDifficulty { Easy, Medium, Hard, Impossible }
 

@@ -1,6 +1,4 @@
-﻿using PhantomDragonStudio.UnitSystem.Data;
-
-namespace App.Managers
+﻿namespace App.Managers
 {
     public class GameManager : MonoBehaviour
     {
