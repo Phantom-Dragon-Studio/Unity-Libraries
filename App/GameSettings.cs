@@ -1,4 +1,6 @@
-﻿﻿﻿ namespace App
+﻿﻿﻿ using UnityEngine;
+
+   namespace App
 {
     public enum GameDifficulty { Easy, Medium, Hard, Impossible }
 

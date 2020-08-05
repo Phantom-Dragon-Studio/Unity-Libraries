@@ -15,18 +15,16 @@ namespace App
             attachmentPointTransform = transform;
         }
 
-        public void LaunchPrimaryProjectile(InputAction.CallbackContext context)
+        public void LaunchPrimaryProjectile()
         {
-            if (!context.performed) return;
             spawnedProjectile = pools[0].RemoveFromPool();
             spawnedProjectile.Transform.position = attachmentPointTransform.position;
             spawnedProjectile.Transform.rotation = attachmentPointTransform.rotation;
             spawnedProjectile.Activate();
         }
         
-        public void LaunchSecondaryProjectile(InputAction.CallbackContext context)
+        public void LaunchSecondaryProjectile()
         {
-            if (!context.performed) return;
             spawnedProjectile = pools[1].RemoveFromPool();
             spawnedProjectile.Transform.position = attachmentPointTransform.position;
             spawnedProjectile.Transform.rotation = attachmentPointTransform.parent.rotation;

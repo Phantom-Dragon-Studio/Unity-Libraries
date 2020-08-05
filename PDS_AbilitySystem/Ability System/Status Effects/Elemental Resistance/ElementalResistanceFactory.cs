@@ -6,7 +6,7 @@
         {
             ElementalResistance newElementalResistance = new ElementalResistance(elementalType, amount)
             {
-                ResistanceInfo = {type = elementalType, value = amount}
+                ResistanceInfo = { type = elementalType, value = amount }
             };
             return newElementalResistance;
         }

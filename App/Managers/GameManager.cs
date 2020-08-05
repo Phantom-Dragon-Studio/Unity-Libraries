@@ -1,4 +1,6 @@
-﻿namespace App.Managers
+﻿using UnityEngine;
+
+namespace App.Managers
 {
     public class GameManager : MonoBehaviour
     {

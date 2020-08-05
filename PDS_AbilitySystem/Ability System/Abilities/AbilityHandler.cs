@@ -1,7 +1,6 @@
 ﻿﻿﻿using System.Collections.Generic;
-using UnityEngine;
 
-namespace PhantomDragonStudio.Ability_System
+  namespace PhantomDragonStudio.Ability_System
 {
     public class AbilityHandler : IAbilityHandler
     {

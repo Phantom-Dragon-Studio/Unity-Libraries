@@ -1,4 +1,6 @@
-﻿namespace  PhantomDragonStudio.Combat.Projectile_Behavior
+﻿using PhantomDragonStudio.Projectiles;
+
+namespace  PhantomDragonStudio.Combat.Projectile_Behavior
 {
     public interface IProjectileBehavior 
     {

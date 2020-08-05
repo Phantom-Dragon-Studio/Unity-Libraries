@@ -1,5 +1,4 @@
-﻿using PhantomDragonStudio.Combat.Projectile_Behavior;
-using UnityEngine;
+﻿using PhantomDragonStudio.Projectiles;
 
 namespace App.Projectile_Behaviors
 {

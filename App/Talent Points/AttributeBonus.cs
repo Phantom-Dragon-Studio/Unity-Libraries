@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using PhantomDragonStudio.TalentPoints;
+using PhantomDragonStudio.UnitSystem.Attributes;
+using UnityEngine;
 
 namespace App.Talent_Points
 {

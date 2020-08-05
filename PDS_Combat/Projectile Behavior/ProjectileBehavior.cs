@@ -1,4 +1,7 @@
-﻿﻿﻿ namespace PhantomDragonStudio.Combat.Projectile_Behavior
+﻿using PhantomDragonStudio.Projectiles;
+using UnityEngine;
+
+   namespace PhantomDragonStudio.Combat.Projectile_Behavior
 {
     //The entire point of this class is for polymorphism between behavior types in the inspector.
     public abstract class ProjectileBehavior : ScriptableObject, IProjectileBehavior

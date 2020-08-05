@@ -3,6 +3,7 @@ using PhantomDragonStudio.Combat.Event_Args;
 using PhantomDragonStudio.Combat.Projectile_Behavior;
 using PhantomDragonStudio.PoolingSystem;
 using PhantomDragonStudio.Projectiles;
+using UnityEngine;
 
 namespace App
 {
@@ -22,8 +23,8 @@ namespace App
         #endregion
         
         #region Getters
-
         public ProjectileData Data => projectileData;
+        Transform IProjectile.Transform { get; set; }
         public Transform Transform => transform;
         public ProjectileBehavior Behavior => behavior;
         public Rigidbody Rigidbody => rigidbody;

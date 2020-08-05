@@ -1,11 +1,11 @@
-﻿﻿﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
+using Logger = PhantomDragonStudio.Core.Utilities.Logger;
 
 namespace PhantomDragonStudio.Ability_System
 {
     [System.Serializable]
-    public abstract class BaseAbility : ScriptableObject, IAbility
+    public abstract class BaseAbility : IAbility
     {
         [SerializeField] protected AbilityInfo abilityInformation = default;
         public AbilityInfo AbilityInformation => abilityInformation;
@@ -45,20 +45,18 @@ namespace PhantomDragonStudio.Ability_System
         public void EngageCooldown()
         {
             isOnCooldown = true;
-            Caster.StartCoroutine(cooldownCoroutine);
         }
 
         public void ResetCooldown()
         {
-            Caster.StopCoroutine(cooldownCoroutine);
             isOnCooldown = false;
         }
 
         private IEnumerator CooldownTick()
         {
-            Debug.Log("Timer started: " + cooldown);
+            Logger.Say("Timer started: " + cooldown);
             yield return cooldown;
-            Debug.Log("Wait completed!");
+            Logger.Say("Wait completed!");
             ResetCooldown();
         }
     }

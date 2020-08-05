@@ -1,4 +1,4 @@
-﻿﻿﻿using PhantomDragonStudio.HeroSystem;
+﻿using PhantomDragonStudio.UnitSystem.Attributes;
 
 namespace PhantomDragonStudio.Ability_System
 {
