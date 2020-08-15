@@ -6,9 +6,6 @@ namespace App
     public class UnityConsole : IOutput
     {
         public void Say(string message) => Debug.Log(message);
-        public void SayWarning(string message)
-        {
-            throw new System.NotImplementedException();
-        }
+        public void SayWarning(string message) => Debug.Warn(message) 
     }
 }
