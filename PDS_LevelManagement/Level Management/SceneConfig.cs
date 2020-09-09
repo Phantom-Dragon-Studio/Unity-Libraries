@@ -1,12 +1,13 @@
-﻿﻿﻿using UnityEngine;
-
-[CreateAssetMenu(fileName = "SceneConfig", menuName = "IntoToLevelDesign/SceneManagement")]
-public class SceneConfig : ScriptableObject
-{
-    public string[] Layers;
+﻿﻿﻿namespace PhantomDragonStudio.LevelManagement.Level_Management
+  {
+      [CreateAssetMenu(fileName = "SceneConfig", menuName = "IntoToLevelDesign/SceneManagement")]
+      public class SceneConfig : ScriptableObject
+      {
+          public string[] Layers;
         
-    public static implicit operator string[] (SceneConfig config) => config.Layers;
+          public static implicit operator string[] (SceneConfig config) => config.Layers;
 
-    public string this[int index] => Layers[index];
-    public int Count => Layers.Length;
-}
+          public string this[int index] => Layers[index];
+          public int Count => Layers.Length;
+      }
+  }

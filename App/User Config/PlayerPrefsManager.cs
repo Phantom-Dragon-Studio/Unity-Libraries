@@ -1,7 +1,7 @@
 ﻿using PhantomDragonStudio.Core.Audio_Management;
 using UnityEngine;
 
-namespace App.User_Config
+namespace App
 {
     public static class PlayerPrefsManager
     {

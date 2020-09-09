@@ -1,8 +1,6 @@
 using System.Collections;
-using UnityEngine;
-using UnityEngine.SceneManagement;
 
-namespace PhantomDragonStudio.LevelManagement
+namespace PhantomDragonStudio.LevelManagement.Level_Management
 {
     public class SceneUnloader
     {

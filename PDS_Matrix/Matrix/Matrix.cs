@@ -1,6 +1,4 @@
-﻿﻿﻿using UnityEngine;
-
-namespace PhantomDragonStudio.Matrix
+﻿﻿﻿namespace PhantomDragonStudio.Matrix.Matrix
 {
     [SelectionBase]
     public partial class Matrix : MonoBehaviour

@@ -1,6 +1,8 @@
-namespace PhantomDragonStudio.Core.Utilities
+using PhantomDragonStudio.Core.Utilities;
+
+namespace PhantomDragonStudio.Core
 {
-    public static class Logger
+    public static class OutputHandler
     {
         private static readonly IOutput _output;
         public static void Say(string message) => _output.Say(message);

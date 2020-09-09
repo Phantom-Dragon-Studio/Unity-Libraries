@@ -1,12 +1,8 @@
-﻿﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using PhantomDragonStudio.Tools;
-using UnityEngine;
-using PhantomDragonStudio.CombatMechanics.Projectiles;
 
-
-namespace PhantomDragonStudio.PoolingSystem
+namespace PhantomDragonStudio.PoolingSystem.Projectile_Pools
 {
     /// <summary>
     /// This pool is tracked by IProjectile InstanceID

@@ -1,4 +1,4 @@
-﻿﻿﻿namespace PhantomDragonStudio.Combat.Health
+﻿﻿﻿namespace PhantomDragonStudio.Combat
 {
     public interface IHealthMechanics : IHealable, IDamageable, IKillable
     {

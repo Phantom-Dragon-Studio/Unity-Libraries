@@ -1,10 +1,6 @@
-﻿﻿﻿using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
-using System;
-using UnityEngine.Analytics;
+﻿using System.Collections.Generic;
 
-namespace PhantomDragonStudio.Matrix
+namespace PhantomDragonStudio.Matrix.Matrix
 {
     [RequireComponent(typeof(MeshRenderer))]
     public class MatrixAreaCalculator : MonoBehaviour

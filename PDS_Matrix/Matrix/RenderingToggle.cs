@@ -1,61 +1,61 @@
-﻿﻿﻿using System.Collections.Generic;
-using PhantomDragonStudio.Input;
-using PhantomDragonStudio.Matrix;
-using UnityEngine;
+﻿using System.Collections.Generic;
 
-public class RenderingToggle : MonoBehaviour
+namespace PhantomDragonStudio.Matrix.Matrix
 {
-    private MatrixTile[] tiles;
-    private readonly List<Renderer> renderers = new List<Renderer>();
-    private bool gridRendering = false;
-    private PlayerInputHandler Toggle;
-    private void Awake()
+    public class RenderingToggle : MonoBehaviour
     {
-        tiles = FindObjectsOfType<MatrixTile>();
-        foreach (var tile  in tiles)
+        private MatrixTile[] tiles;
+        private readonly List<Renderer> renderers = new List<Renderer>();
+        private bool gridRendering = false;
+        private PlayerInputHandler Toggle;
+        private void Awake()
         {
-            renderers.Add((tile.GetComponent<Renderer>()));
-        }
+            tiles = FindObjectsOfType<MatrixTile>();
+            foreach (var tile  in tiles)
+            {
+                renderers.Add((tile.GetComponent<Renderer>()));
+            }
         
-        DisableRendering();
-    }
-
-    private void Initialize()
-    {
-        Toggle = FindObjectOfType<PlayerInputHandler>();
-        Toggle.Toggled += ToggleGrid;
-    }
-    
-    public void ToggleGrid()
-    {
-        if(Toggle == null)
-            Initialize();
-        
-        if (!gridRendering)
-        {
-            EnableRendering();
-            gridRendering = true;
-        }
-        else
-        {
             DisableRendering();
-            gridRendering = false;
         }
-    }
 
-    private void EnableRendering()
-    {
-        for (int i = 0; i < renderers.Count; i++)
+        private void Initialize()
         {
-            renderers[i].enabled = true;
+            Toggle = FindObjectOfType<PlayerInputHandler>();
+            Toggle.Toggled += ToggleGrid;
         }
-    }
-
-    private void DisableRendering()
-    {
-        for (int i = 0; i < renderers.Count; i++)
+    
+        public void ToggleGrid()
         {
-            renderers[i].enabled = false;
+            if(Toggle == null)
+                Initialize();
+        
+            if (!gridRendering)
+            {
+                EnableRendering();
+                gridRendering = true;
+            }
+            else
+            {
+                DisableRendering();
+                gridRendering = false;
+            }
+        }
+
+        private void EnableRendering()
+        {
+            for (int i = 0; i < renderers.Count; i++)
+            {
+                renderers[i].enabled = true;
+            }
+        }
+
+        private void DisableRendering()
+        {
+            for (int i = 0; i < renderers.Count; i++)
+            {
+                renderers[i].enabled = false;
+            }
         }
     }
 }

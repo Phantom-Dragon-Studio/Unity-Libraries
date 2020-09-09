@@ -1,8 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
-namespace PhantomDragonStudio.LevelManagement
+namespace PhantomDragonStudio.LevelManagement.Level_Management
 {
     public class LoadingProgressProcessor : MonoBehaviour
     {

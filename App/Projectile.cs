@@ -1,7 +1,7 @@
 ﻿using System;
-using PhantomDragonStudio.Combat.Event_Args;
-using PhantomDragonStudio.Combat.Projectile_Behavior;
+using PhantomDragonStudio.Combat;
 using PhantomDragonStudio.PoolingSystem;
+using PhantomDragonStudio.PoolingSystem.Projectile_Pools;
 using PhantomDragonStudio.Projectiles;
 using UnityEngine;
 

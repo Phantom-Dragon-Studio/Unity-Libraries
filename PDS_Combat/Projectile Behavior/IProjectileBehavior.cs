@@ -1,6 +1,6 @@
 ﻿using PhantomDragonStudio.Projectiles;
 
-namespace  PhantomDragonStudio.Combat.Projectile_Behavior
+namespace  PhantomDragonStudio.Combat
 {
     public interface IProjectileBehavior 
     {

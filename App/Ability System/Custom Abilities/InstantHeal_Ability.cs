@@ -1,7 +1,7 @@
-﻿using PhantomDragonStudio.Ability_System;
+﻿using PhantomDragonStudio.AbilitySystem;
 using UnityEngine;
 
-namespace App.Spell_System.Custom_Abilities
+namespace App
 {
     [CreateAssetMenu(fileName = "New Instant Heal Ability", menuName = "Phantom Dragon Studio/Ability System/Abilities/Instant Heal Ability", order = 1)]
     public class InstantHeal_Ability : BaseAbility

@@ -1,6 +1,6 @@
 ﻿using PhantomDragonStudio.UnitSystem.Attributes;
 
-namespace PhantomDragonStudio.Ability_System
+namespace PhantomDragonStudio.AbilitySystem
 {
     public interface IStatusEffect
     {

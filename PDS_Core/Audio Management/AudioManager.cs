@@ -1,4 +1,6 @@
-﻿﻿﻿namespace PhantomDragonStudio.Core.Audio_Management
+﻿using UnityEngine;
+
+  namespace PhantomDragonStudio.Core.Audio_Management
 {
     public class AudioManager : MonoBehaviour
     {

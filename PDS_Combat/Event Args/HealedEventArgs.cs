@@ -1,6 +1,6 @@
 ﻿﻿﻿using System;
 
-  namespace PhantomDragonStudio.Combat.Event_Args
+  namespace PhantomDragonStudio.Combat
   {
       public class HealedEventArgs : EventArgs
       {

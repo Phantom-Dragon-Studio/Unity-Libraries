@@ -1,9 +1,9 @@
-﻿using PhantomDragonStudio.Ability_System;
-using PhantomDragonStudio.PoolingSystem;
+﻿using PhantomDragonStudio.AbilitySystem;
+using PhantomDragonStudio.PoolingSystem.Projectile_Pools;
 using PhantomDragonStudio.Projectiles;
 using UnityEngine;
 
-namespace App.Spell_System.Custom_Abilities
+namespace App
 {
     [CreateAssetMenu(fileName = "New Icebolt Ability", menuName = "Phantom Dragon Studio/Ability System/Abilities/Icebolt Ability", order = 1)]
     public class Icebolt_Ability : BaseAbility

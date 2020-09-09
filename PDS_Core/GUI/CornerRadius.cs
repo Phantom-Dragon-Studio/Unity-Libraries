@@ -1,4 +1,7 @@
-﻿namespace PhantomDragonStudio.Core.GUI
+﻿using UnityEngine;
+using UnityEngine.UIElements;
+
+namespace PhantomDragonStudio.Core.GUI
 {
     public class DrawableImage
     {

@@ -2,7 +2,7 @@
 using PhantomDragonStudio.UnitSystem.CombatStats;
 using UnityEngine;
 
-namespace PhantomDragonStudio.Ability_System
+namespace PhantomDragonStudio.AbilitySystem
 {
     [System.Serializable]
     public class StatusEffect : IStatusEffect

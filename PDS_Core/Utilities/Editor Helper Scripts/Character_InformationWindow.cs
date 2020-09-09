@@ -1,4 +1,10 @@
-﻿namespace PhantomDragonStudio.Core.Utilities.Editor_Helper_Scripts
+﻿using PhantomDragonStudio.UnitSystem;
+using PhantomDragonStudio.UnitSystem.Characteristics;
+using PhantomDragonStudio.UnitSystem.Characters;
+using PhantomDragonStudio.UnitSystem.CombatStats.Leagues;
+using UnityEngine;
+
+namespace PhantomDragonStudio.Core.Utilities.Editor_Helper_Scripts
 {
     public class Character_InformationWindow : MonoBehaviour
     {

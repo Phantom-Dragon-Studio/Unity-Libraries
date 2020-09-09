@@ -1,4 +1,4 @@
-﻿﻿﻿namespace PhantomDragonStudio.Ability_System
+﻿﻿﻿namespace PhantomDragonStudio.AbilitySystem
 {
     public static class StatusEffectFactory
     {

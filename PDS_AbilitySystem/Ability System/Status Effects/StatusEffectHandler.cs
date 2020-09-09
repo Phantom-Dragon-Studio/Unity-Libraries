@@ -1,6 +1,6 @@
 ﻿﻿﻿using System.Collections.Generic;
 
-namespace PhantomDragonStudio.Ability_System
+  namespace PhantomDragonStudio.AbilitySystem
 {
     public class StatusEffectHandler : IStatusEffectHandler
     {

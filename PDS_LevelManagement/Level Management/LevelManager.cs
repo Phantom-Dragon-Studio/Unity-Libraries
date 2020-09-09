@@ -1,11 +1,7 @@
-﻿﻿﻿using System;
+﻿using System.Collections;
 
-namespace PhantomDragonStudio.LevelManagement
+  namespace PhantomDragonStudio.LevelManagement.Level_Management
 {
-    using System.Collections;
-    using UnityEngine;
-    using UnityEngine.SceneManagement;
-    
     public class LevelManager : MonoBehaviour
     {
         [SerializeField] private Canvas splashCanvas = default; 

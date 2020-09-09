@@ -1,6 +1,6 @@
 ﻿﻿﻿using PhantomDragonStudio.Core.Utilities;
 
-namespace PhantomDragonStudio.Ability_System
+  namespace PhantomDragonStudio.AbilitySystem
 {
     [System.Serializable]
     public class ElementalResistance : IElementalResistance

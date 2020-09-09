@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace PhantomDragonStudio.Core.Audio_Management
 {
     public class AudioSourceHandler

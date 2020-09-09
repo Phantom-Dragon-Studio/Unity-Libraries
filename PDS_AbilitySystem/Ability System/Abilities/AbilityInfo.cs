@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Serialization;
 
-namespace PhantomDragonStudio.Ability_System
+namespace PhantomDragonStudio.AbilitySystem
 {
     [System.Serializable]
     public class AbilityInfo

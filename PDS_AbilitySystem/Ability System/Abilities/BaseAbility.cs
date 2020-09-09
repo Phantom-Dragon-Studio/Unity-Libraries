@@ -1,8 +1,8 @@
 ﻿using System.Collections;
+using PhantomDragonStudio.Core.Utilities;
 using UnityEngine;
-using Logger = PhantomDragonStudio.Core.Utilities.Logger;
 
-namespace PhantomDragonStudio.Ability_System
+namespace PhantomDragonStudio.AbilitySystem
 {
     [System.Serializable]
     public abstract class BaseAbility : IAbility
@@ -54,9 +54,9 @@ namespace PhantomDragonStudio.Ability_System
 
         private IEnumerator CooldownTick()
         {
-            Logger.Say("Timer started: " + cooldown);
+            OutputHandler.Say("Timer started: " + cooldown);
             yield return cooldown;
-            Logger.Say("Wait completed!");
+            OutputHandler.Say("Wait completed!");
             ResetCooldown();
         }
     }

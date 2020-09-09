@@ -1,67 +1,68 @@
-﻿﻿﻿using System;
+﻿using System;
 using System.Collections;
-using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class SceneLoader_v2 : MonoBehaviour
+namespace PhantomDragonStudio.LevelManagement.Level_Management
 {
-public class SceneLoader
+    public class SceneLoader_v2 : MonoBehaviour
     {
-        private MonoBehaviour _owner;
-        public SceneLoader(MonoBehaviour owner) => _owner = owner;
-
-        public void LoadScenes(params string[] sceneNames)
+        public class SceneLoader
         {
-            for (int i = 0; i < sceneNames.Length; i++) 
-                LoadScene(sceneNames[i]);
-        }
+            private MonoBehaviour _owner;
+            public SceneLoader(MonoBehaviour owner) => _owner = owner;
 
-        void LoadScene(string name)
-        {
-            if (Exists(name))
-                SceneManager.LoadSceneAsync(name, LoadSceneMode.Additive);
-            else UnableToFindScene(name);
-        }
+            public void LoadScenes(params string[] sceneNames)
+            {
+                for (int i = 0; i < sceneNames.Length; i++) 
+                    LoadScene(sceneNames[i]);
+            }
 
-        private void UnableToFindScene(string name) => 
-            Debug.LogFormat(LogType.Error,LogOption.NoStacktrace,null,"Scene Named <color=yellow>{0}</color> not found, failed to load",name);
+            void LoadScene(string name)
+            {
+                if (Exists(name))
+                    SceneManager.LoadSceneAsync(name, LoadSceneMode.Additive);
+                else UnableToFindScene(name);
+            }
 
-        bool Exists(string name) => Application.CanStreamedLevelBeLoaded(name);
-        public void Load(string level) => LoadScene(level);
+            private void UnableToFindScene(string name) => 
+                Debug.LogFormat(LogType.Error,LogOption.NoStacktrace,null,"Scene Named <color=yellow>{0}</color> not found, failed to load",name);
 
-        public void Load(string level, Action onComplete) => 
-            _owner.StartCoroutine(Co_LoadScene(level, onComplete));
+            bool Exists(string name) => Application.CanStreamedLevelBeLoaded(name);
+            public void Load(string level) => LoadScene(level);
 
-        IEnumerator Co_LoadScene(string sceneName,Action onComplete){
-            async = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
-            async.allowSceneActivation = true;
-            while(async.progress < 0.9f) 
-                OnLoadingProgressChanged(async.progress);
+            public void Load(string level, Action onComplete) => 
+                _owner.StartCoroutine(Co_LoadScene(level, onComplete));
+
+            IEnumerator Co_LoadScene(string sceneName,Action onComplete){
+                async = SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
+                async.allowSceneActivation = true;
+                while(async.progress < 0.9f) 
+                    OnLoadingProgressChanged(async.progress);
             
-            while(!async.isDone)
-                yield return null;
+                while(!async.isDone)
+                    yield return null;
 
-            OnReadyToLoadScene(async.progress);
-            OnLoadingProgressChanged(1);
-            async.allowSceneActivation = true;
-            onComplete?.Invoke();
-        }
+                OnReadyToLoadScene(async.progress);
+                OnLoadingProgressChanged(1);
+                async.allowSceneActivation = true;
+                onComplete?.Invoke();
+            }
 
-        private void OnReadyToLoadScene(float progress)
-        {
+            private void OnReadyToLoadScene(float progress)
+            {
             
-        }
+            }
 
-        public Action<float> WhenBusy;
+            public Action<float> WhenBusy;
         
-        private void OnLoadingProgressChanged(float progress) => WhenBusy?.Invoke(progress);
+            private void OnLoadingProgressChanged(float progress) => WhenBusy?.Invoke(progress);
 
-        private AsyncOperation async;
+            private AsyncOperation async;
         
-        public void Unload(string level)
-        {
-            if(!string.IsNullOrWhiteSpace(level))
-                SceneManager.UnloadSceneAsync(level);
+            public void Unload(string level)
+            {
+                if(!string.IsNullOrWhiteSpace(level))
+                    SceneManager.UnloadSceneAsync(level);
+            }
         }
     }
 }

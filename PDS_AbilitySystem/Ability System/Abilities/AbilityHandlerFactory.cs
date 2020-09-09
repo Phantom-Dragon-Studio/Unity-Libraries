@@ -1,6 +1,6 @@
 ﻿using PhantomDragonStudio.Core.Utilities;
 
-namespace PhantomDragonStudio.Ability_System
+namespace PhantomDragonStudio.AbilitySystem
 {
     /// <summary>
     /// A Null reference exception can be thrown by the AddAbility line if the CharacterLeague sends an attribute with a null value
@@ -18,7 +18,7 @@ namespace PhantomDragonStudio.Ability_System
                     newAbilityHandler.AddAbility(i, abilities[i]);
                 }
             }
-            else Logger.Say("Null list received by AbilityHandler Factory.");
+            else OutputHandler.Say("Null list received by AbilityHandler Factory.");
 
             return newAbilityHandler;
         }

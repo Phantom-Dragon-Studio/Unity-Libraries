@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace App.Managers
+namespace App
 {
     public class GameManager : MonoBehaviour
     {

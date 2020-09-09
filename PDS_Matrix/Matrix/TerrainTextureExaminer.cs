@@ -1,10 +1,8 @@
-﻿﻿﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿
 
 //TODO Optimize code
 //Currently outputs 2.8MB of GC alloc and uses 16k+ draw calls. This is unacceptable.
-namespace PhantomDragonStudio.Matrix
+namespace PhantomDragonStudio.Matrix.Matrix
 {
     public class TerrainTextureExaminer : MonoBehaviour
     {

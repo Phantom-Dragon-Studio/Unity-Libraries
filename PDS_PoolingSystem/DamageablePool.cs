@@ -1,12 +1,11 @@
-﻿﻿﻿using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using PhantomDragonStudio.PoolingSystem;
-using PhantomDragonStudio.Tools;
 using UnityEngine;
+using PhantomDragonStudio;
+using PhantomDragonStudio.Combat;
 
-
-namespace PhantomDragonStudio.CombatMechanics
+namespace PhantomDragonStudio.PoolingSystem
 {
     /// <summary>
     /// This pool is tracked by the IDamageable GAME OBJECT's instanceID. 

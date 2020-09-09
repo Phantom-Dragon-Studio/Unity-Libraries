@@ -2,7 +2,7 @@
 using PhantomDragonStudio.UnitSystem.Attributes;
 using UnityEngine;
 
-namespace App.Talent_Points
+namespace App
 {
     [CreateAssetMenu(fileName = "New Talent Point", menuName = "Phantom Dragon Studio/Talents/Attribute Bonus Talent", order = 2)]
     public class AttributeBonus : BaseTalentPoint

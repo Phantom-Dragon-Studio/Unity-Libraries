@@ -1,7 +1,4 @@
-﻿﻿﻿using UnityEditor;
-using UnityEngine;
-
-namespace PhantomDragonStudio.Matrix
+﻿namespace PhantomDragonStudio.Matrix.Matrix.Editor
 {
     [CustomEditor(typeof(Matrix))]
     public class MatrixEditor : Editor

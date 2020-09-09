@@ -1,8 +1,4 @@
-﻿﻿﻿using PhantomDragonStudio.CombatMechanics;
-using UnityEngine;
-using UnityEngine.Serialization;
-
-namespace PhantomDragonStudio.PoolingSystem
+﻿namespace PhantomDragonStudio.PoolingSystem.Projectile_Pools
 {
     public class ProjectilePoolHandler : MonoBehaviour
     {

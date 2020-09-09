@@ -1,6 +1,5 @@
 ﻿using System;
-using PhantomDragonStudio.Combat.Health;
-using PhantomDragonStudio.Core.Utilities;
+using PhantomDragonStudio.Combat;
 using PhantomDragonStudio.UnitSystem.Characters;
 
 namespace PhantomDragonStudio.UnitSystem
@@ -35,7 +34,7 @@ namespace PhantomDragonStudio.UnitSystem
             base.HealthCheck();
             if(CurrentHealth <= 0)
             {
-                Logger.Say( this.character.GameObject.name + " has died.");
+                OutputHandler.Say( this.character.GameObject.name + " has died.");
                 character.Die();
             }
         }

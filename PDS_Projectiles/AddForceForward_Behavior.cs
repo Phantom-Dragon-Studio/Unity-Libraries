@@ -1,6 +1,4 @@
-﻿using PhantomDragonStudio.Projectiles;
-
-namespace App.Projectile_Behaviors
+﻿namespace PhantomDragonStudio.Projectiles
 {
     [CreateAssetMenu(fileName ="New Add Force Forward Behavior", menuName ="Phantom Dragon Studio/Combat System/Projectile Behaviors/Add Force Forward")]
 

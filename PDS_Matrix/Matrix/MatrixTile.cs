@@ -1,6 +1,4 @@
-﻿﻿﻿using UnityEngine;
-
-namespace PhantomDragonStudio.Matrix
+﻿﻿﻿namespace PhantomDragonStudio.Matrix.Matrix
 {
     public class MatrixTile : MonoBehaviour
     {

@@ -2,7 +2,7 @@
 using PhantomDragonStudio.TalentPoints;
 using UnityEngine;
 
-namespace App.Talent_Points
+namespace App
 {
     [CreateAssetMenu(fileName = "New CombatStatBonus Talent",
         menuName = "Phantom Dragon Studio/Talents/Combat Stat Bonus Talent", order = 3)]
